@@ -10,7 +10,7 @@ To download the lastest release you can click [here](https://github.com/Filippo2
 ### Curve with 5 iteration
 <img src="https://user-images.githubusercontent.com/107002401/235722138-f532fdb2-8a1c-4f4a-9362-271d393e9838.png" alt="Koch curve" width=500 />
 
-### Snowflake with 5 iteration
+### Snowflake with 6 iteration
 <img src="https://user-images.githubusercontent.com/107002401/235722252-fc92a61e-173b-41e0-aceb-8cd0d87af5bd.png" alt="Koch snowflake" width=500 />
 
 ## Run
