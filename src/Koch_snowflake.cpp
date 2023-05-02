@@ -70,7 +70,7 @@ int main(int argc, char *argv[]) {
     Coords2D B = Coords2D(stoi(argv[3]), stoi(argv[4]));
     Coords2D C = find_top_vertex(A, B, up);
 
-    short count = (short) stoi(argv[5]) - 1;
+    short count = (short) stoi(argv[5]);
 
     if (count > 8) {
         cout << "count too high!";

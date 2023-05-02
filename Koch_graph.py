@@ -46,7 +46,7 @@ class Graph:
                            )
 
     def inc_count(self, event):
-        max_count = 7 if self.option == "bin\\Koch_snowflake.exe" else 5
+        max_count = 6 if self.option == "bin\\Koch_snowflake.exe" else 5
         self.count += 1 if event.keysym == "Up" and self.count < max_count else \
                      -1 if event.keysym == "Down" and self.count > 0 \
                      else 0
