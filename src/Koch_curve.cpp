@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
-#include "lib/vector.h"
-#include "lib/coords2d.h"
+#include "../lib/vector.h"
+#include "../lib/coords2d.h"
 using namespace std;
 
 vector<Coords2D> find_points(Coords2D from, Coords2D to) {
