@@ -3,7 +3,6 @@ from subprocess import check_output
 from PIL import Image, ImageTk
 import tkinter as tk
 
-
 WIDTH = 500
 HEIGHT = 500
 
@@ -44,11 +43,12 @@ class Graph:
              str(self.goal.x), str(self.goal.y),
              str(self.count)],
             shell=True).decode('utf-8')
-        )
+                           )
 
     def inc_count(self, event):
-        self.count += 1 if event.keysym == "Up" and self.count < 5 else\
-                     -1 if event.keysym == "Down" and self.count > 0\
+        max_count = 7 if self.option == "bin\\Koch_snowflake.exe" else 5
+        self.count += 1 if event.keysym == "Up" and self.count < max_count else \
+                     -1 if event.keysym == "Down" and self.count > 0 \
                      else 0
         self.clear()
         self.set_points()
@@ -69,7 +69,7 @@ class Graph:
 
 
 def init_window(root):
-    root.title("Curva di Koch")
+    root.title("Koch graph")
     root.withdraw()
     root.wm_iconphoto(False, ImageTk.PhotoImage(Image.open('icon.ico')))
     root.minsize(240, 200)

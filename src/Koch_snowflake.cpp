@@ -68,11 +68,9 @@ int main(int argc, char *argv[]) {
 
     Coords2D A = Coords2D(stoi(argv[1]), stoi(argv[2]));
     Coords2D B = Coords2D(stoi(argv[3]), stoi(argv[4]));
-//    Coords2D A = Coords2D(0, 450);
-//    Coords2D B = Coords2D(1000, 450);
     Coords2D C = find_top_vertex(A, B, up);
 
-    short count = (short) stoi(argv[5]);
+    short count = (short) stoi(argv[5]) - 1;
 
     if (count > 8) {
         cout << "count too high!";
